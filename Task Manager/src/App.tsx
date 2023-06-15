@@ -1,11 +1,21 @@
+<<<<<<< Updated upstream
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+=======
+import {useState} from 'react'
+import InputField from '../components/InputField'
+import {toDoMould} from '../components/mould'
+import ToDoList from '../components/ToDoList'
+import uuid from 'react-uuid'
+import React from 'react'
+>>>>>>> Stashed changes
 import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
 
+<<<<<<< Updated upstream
   return (
     <>
       <div>
@@ -29,6 +39,28 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
     </>
+=======
+const App: React.FC = () => {
+  const [task, setTask] = useState<string | undefined>()
+  const [toDoBox, setToDoBox] = useState<toDoMould[]>([])
+  
+  const handleAdd = (e: React.FormEvent): void =>{
+    e.preventDefault()
+    if (task) {
+      setToDoBox([...toDoBox, {id: uuid(), myTask: task, complete: false}])
+    }
+    setTask('')
+  }
+
+  
+  return(
+    <div className="app">
+      <header className='head'>Task Manager</header>
+      <InputField task={task} setTask={setTask} handleAdd={handleAdd}/>
+      <ToDoList toDoBox={toDoBox} setToDoBox={setToDoBox} />
+    </div>
+
+>>>>>>> Stashed changes
   )
 }
 
