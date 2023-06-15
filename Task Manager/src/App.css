@@ -1,42 +1,33 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body,html{
+  height: 100vh;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+/*https://webdesign.tutsplus.com/tutorials/how-to-create-a-frosted-glass-effect-in-css--cms-32535*/
+body{
+  margin: 10px auto;
+  min-width: 40rem;
+  max-width: 40rem;
+  min-height: 40rem;
+  max-height: 40rem;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, .15);
+  backdrop-filter: blur(15px);
+}
+
+.head{
+  background-color: #7171e9;
+  color: rgb(235, 220, 220);
+  padding: 1rem 0; 
   text-align: center;
+  border-radius: 15px 15px 0 0;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
