@@ -8,7 +8,7 @@ import './App.css'
 
 
 const App: React.FC = () => {
-  const [task, setTask] = useState<string | undefined>()
+  const [task, setTask] = useState<string>("")
   const [toDoBox, setToDoBox] = useState<toDoMould[]>([])
   
   const handleAdd = (e: React.FormEvent): void =>{

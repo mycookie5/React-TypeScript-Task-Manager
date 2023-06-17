@@ -49,6 +49,55 @@
     transform: scale(0.8);
 }
 
-.date_icon_span{
+.container{
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    font-family: 'Open Sans',sans-serif;
+    color: rgb(6, 6, 6);
+    margin-top: 2rem;
+    background: inherit;
+    color: #141414;
+    overflow: auto;
+    max-height: 30rem;
+}
+
+.container::-webkit-scrollbar{
+    display: none; /* Chrome Safari ... */
+}
+
+.container {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+
+
+.single_form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 15px;
+    padding: 1rem;
+    background-color: rgba(189,189,189,0.1);
+}
+
+.single_form:hover{
+    background-color: rgba(234, 232, 232, 0.1);
+}
+
+.div_button{
+    display: flex;
+    justify-content: space-evenly;
+    width: 35%;
+}
+
+.button{
+    width: 40%;
+    height: 100%;
+    border-radius: 40px;
+    border: none;
     cursor: pointer;
 }

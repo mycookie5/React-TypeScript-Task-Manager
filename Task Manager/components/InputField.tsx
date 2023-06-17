@@ -3,8 +3,8 @@ import{useRef} from 'react'
 import '../src/style.css'
 
 interface Props{
-    task: string | undefined
-    setTask: React.Dispatch<React.SetStateAction<string | undefined>>
+    task: string
+    setTask: React.Dispatch<React.SetStateAction<string>>
     handleAdd: (e: React.FormEvent) => void
 }
 
