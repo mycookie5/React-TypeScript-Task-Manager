@@ -50,18 +50,20 @@
 }
 
 .container{
+    font-family: 'Open Sans',sans-serif;
+    background: inherit;
     margin: 0 auto;
+    margin-top: 2rem;
     width: 60%;
     display: flex;
     flex-direction: column;
     gap: 0.2rem;
-    font-family: 'Open Sans',sans-serif;
-    color: rgb(6, 6, 6);
-    margin-top: 2rem;
-    background: inherit;
     color: #141414;
     overflow: auto;
     max-height: 30rem;
+    /*left, bottom auto fix dragging problem */
+    bottom: auto !important;
+    left: auto !important;
 }
 
 .container::-webkit-scrollbar{
@@ -74,7 +76,7 @@
   }
 
 
-
+  
 .single_form{
     display: flex;
     flex-direction: row;
